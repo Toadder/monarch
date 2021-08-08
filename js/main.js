@@ -103,9 +103,9 @@ jQuery(document).ready(function($) {
     });
   }
   $('.clients__slider').slick({
-    slidesToShow: 2,
+    slidesToShow: 4,
     centerMode: true,
-    centerPadding: '30.5%',
+    centerPadding: '11%',
     appendArrows: $('.clients__flex'),
     speed: 600,
 
@@ -130,7 +130,7 @@ jQuery(document).ready(function($) {
         breakpoint: 576, 
         settings: {
           slidesToShow: 1,
-          centerPadding: '15%',
+          centerPadding: '13.7%',
           speed: 750,
         }
       },
