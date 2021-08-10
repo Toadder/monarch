@@ -1274,6 +1274,11 @@ body._lock {
   border-radius: 6px;
 }
 
+.clients__slide:hover img {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
 .clients__slide img {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
@@ -1479,7 +1484,9 @@ body._lock {
   background-color: #FFFFFF;
   border: 1px solid #D0D0D0;
   border-radius: 2px;
-  padding: 19.7px 29px;
+  padding: 17px 29px;
+  font-size: 18px;
+  color: #8D8D8D;
 }
 
 .popup__input input::-webkit-input-placeholder {
