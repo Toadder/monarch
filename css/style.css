@@ -210,9 +210,9 @@ body._lock {
   left: 0;
   width: 100%;
   z-index: 10;
-  -webkit-transition: padding .55s;
-  -o-transition: padding .55s;
-  transition: padding .55s;
+  -webkit-transition: padding-top .55s, padding-bottom .55s;
+  -o-transition: padding-top .55s, padding-bottom .55s;
+  transition: padding-top .55s, padding-bottom .55s;
   background-color: white;
 }
 
