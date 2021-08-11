@@ -260,171 +260,187 @@ function phoneMask() {
   }
 }
 
+function chechkForm() {
+  let forms = document.querySelectorAll('form');
 
-// Calling the functions
-popup();
-headerScroll();
-equalizeOfferImagesWidth();
-servicesTabs();
-phoneMask();
+  forms.forEach(form => {
+    form.addEventListener('submit', function(e) {
+      let inputs = document.querySelectorAll('input');
+
+      for(let )
+    });
+  });
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  // Calling the functions
+  popup();
+  headerScroll();
+  equalizeOfferImagesWidth();
+  servicesTabs();
+  phoneMask();
+  chechkForm();
 
 
-// Intro slider 
-let introSlider = new Swiper('.intro__slider', {
-  // Other settings 
-  speed: 900,
-  effect: 'fade',
-  fadeEffect: {
-    crossFade: true,
-  },
-  simulateTouch: false,
-  autoplay: {
-    disableOnInteraction: false,
-    pauseOnMouseEnter: true,
-     delay: 5000,
-   },
+  // Intro slider 
+  let introSlider = new Swiper('.intro__slider', {
+    // Other settings 
+    speed: 900,
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true,
+    },
+    simulateTouch: false,
+    autoplay: {
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+       delay: 5000,
+     },
 
-  // Bullets
-  pagination: {
-    el: '.intro__bullets',
-    clickable: true,
-  }
+    // Bullets
+    pagination: {
+      el: '.intro__bullets',
+      clickable: true,
+    }
+  });
+
+  // Business slider 
+  let businessSlider = new Swiper('.business__slider', {
+    // Arrows 
+    navigation: {
+      nextEl: '.business__next',
+      prevEl: '.business__prev',
+    },
+
+    // Scrollbar
+    scrollbar: {
+      el: '.business__scrollbar',
+      draggable: true,
+    },
+
+    // Keyboard 
+    keyboard: {
+      enabled: true, 
+      onlyInViewport: true,
+      pageUpDown: true,
+    },
+
+    // Other settings 
+    slidesPerView: 3.5, 
+    spaceBetween: 26,
+    speed: 600,
+
+    // breakpoints
+    breakpoints: {
+
+      320: {
+        slidesPerView: 1.2,
+      },
+
+      576: {
+        slidesPerView: 1.5
+      },
+
+      992: {
+        slidesPerView: 2.5,
+      },
+
+      1200: {
+        slidesPerView: 3.5, 
+      },
+
+    },
+  });
+
+  // Reviews slider 
+  let reviewsSlider = new Swiper('.reviews__slider', {
+    // Arrows 
+    navigation: {
+      nextEl: '.reviews__next',
+      prevEl: '.reviews__prev',
+    },
+
+    // Scrollbar
+    scrollbar: {
+      el: '.reviews__scrollbar',
+      draggable: true,
+    },
+
+    // Keyboard 
+    keyboard: {
+      enabled: true, 
+      onlyInViewport: true,
+      pageUpDown: true,
+    },
+
+    // Other settings 
+    slidesPerView: 1.2, 
+    spaceBetween: 29,
+    speed: 600,
+
+    // breakpoints
+    breakpoints: {
+
+      320: {
+        spaceBetween: 15,
+        slidesPerView: 1.15, 
+      },
+
+      576: {
+        spaceBetween: 29,
+        slidesPerView: 1.2, 
+      },
+
+    },
+  });
+
+
+  // Clients slider 
+  let clientsSlider = new Swiper('.clients__slider', {
+    // Arrows 
+    navigation: {
+      nextEl: '.clients__next',
+      prevEl: '.clients__prev',
+    },
+
+    // Scrollbar
+    scrollbar: {
+      el: '.clients__scrollbar',
+      draggable: true,
+    },
+
+    // Keyboard 
+    keyboard: {
+      enabled: true, 
+      onlyInViewport: true,
+      pageUpDown: true,
+    },
+
+    // Other settings 
+    slidesPerView: 4.5, 
+    spaceBetween: 24,
+    speed: 600,
+
+    // breakpoints
+    breakpoints: {
+      320: {
+        slidesPerView: 1.2,
+      },
+
+      576: {
+        slidesPerView: 2.5
+      },
+
+      992: {
+        slidesPerView: 3.5,
+      },
+
+      1200: {
+        slidesPerView: 4.5, 
+      },
+
+    },
+  });
 });
 
-// Business slider 
-let businessSlider = new Swiper('.business__slider', {
-  // Arrows 
-  navigation: {
-    nextEl: '.business__next',
-    prevEl: '.business__prev',
-  },
 
-  // Scrollbar
-  scrollbar: {
-    el: '.business__scrollbar',
-    draggable: true,
-  },
-
-  // Keyboard 
-  keyboard: {
-    enabled: true, 
-    onlyInViewport: true,
-    pageUpDown: true,
-  },
-
-  // Other settings 
-  slidesPerView: 3.5, 
-  spaceBetween: 26,
-  speed: 600,
-
-  // breakpoints
-  breakpoints: {
-
-    320: {
-      slidesPerView: 1.2,
-    },
-
-    576: {
-      slidesPerView: 1.5
-    },
-
-    992: {
-      slidesPerView: 2.5,
-    },
-
-    1200: {
-      slidesPerView: 3.5, 
-    },
-
-  },
-});
-
-// Reviews slider 
-let reviewsSlider = new Swiper('.reviews__slider', {
-  // Arrows 
-  navigation: {
-    nextEl: '.reviews__next',
-    prevEl: '.reviews__prev',
-  },
-
-  // Scrollbar
-  scrollbar: {
-    el: '.reviews__scrollbar',
-    draggable: true,
-  },
-
-  // Keyboard 
-  keyboard: {
-    enabled: true, 
-    onlyInViewport: true,
-    pageUpDown: true,
-  },
-
-  // Other settings 
-  slidesPerView: 1.2, 
-  spaceBetween: 29,
-  speed: 600,
-
-  // breakpoints
-  breakpoints: {
-
-    320: {
-      spaceBetween: 15,
-      slidesPerView: 1.15, 
-    },
-
-    576: {
-      spaceBetween: 29,
-      slidesPerView: 1.2, 
-    },
-
-  },
-});
-
-
-// Clients slider 
-let clientsSlider = new Swiper('.clients__slider', {
-  // Arrows 
-  navigation: {
-    nextEl: '.clients__next',
-    prevEl: '.clients__prev',
-  },
-
-  // Scrollbar
-  scrollbar: {
-    el: '.clients__scrollbar',
-    draggable: true,
-  },
-
-  // Keyboard 
-  keyboard: {
-    enabled: true, 
-    onlyInViewport: true,
-    pageUpDown: true,
-  },
-
-  // Other settings 
-  slidesPerView: 4.5, 
-  spaceBetween: 24,
-  speed: 600,
-
-  // breakpoints
-  breakpoints: {
-    320: {
-      slidesPerView: 1.2,
-    },
-
-    576: {
-      slidesPerView: 2.5
-    },
-
-    992: {
-      slidesPerView: 3.5,
-    },
-
-    1200: {
-      slidesPerView: 4.5, 
-    },
-
-  },
-});
