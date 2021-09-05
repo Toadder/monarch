@@ -342,12 +342,12 @@ body._lock {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  top: 50%;
+  top: 50% !important;
   -webkit-transform: translate(-50%);
       -ms-transform: translate(-50%);
           transform: translate(-50%);
   z-index: 6;
-  left: 51.5%;
+  left: 51.5% !important;
 }
 
 .intro__bullets span {
@@ -1642,9 +1642,9 @@ body._lock {
   }
 
   .intro__bullets {
-    left: 50%;
-    bottom: 22.5px;
-    top: auto;
+    left: 50% !important;
+    bottom: 22.5px !important;
+    top: auto !important;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1832,9 +1832,9 @@ body._lock {
   }
 
   .intro__bullets {
-    left: auto;
-    right: 19px;
-    bottom: 50%;
+    left: auto !important;
+    right: 19px !important;
+    bottom: 50% !important;
     -webkit-transform: translate(0, 50%);
         -ms-transform: translate(0, 50%);
             transform: translate(0, 50%);
