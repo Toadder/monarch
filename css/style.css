@@ -199,6 +199,16 @@ body._lock {
   background-color: #F7F8FB;
 }
 
+.swiper-pagination-bullets {
+  bottom: auto !important;
+  left: auto !important;
+  width: auto !important;
+}
+
+.swiper-pagination-bullet {
+  margin: 0 !important;
+}
+
 /*--------------------*/
 
 /*----- .HEADER -----*/
@@ -351,7 +361,7 @@ body._lock {
 }
 
 .intro__bullets span {
-  margin-bottom: 7px;
+  margin-bottom: 7px !important;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -369,7 +379,7 @@ body._lock {
 }
 
 .intro__bullets span:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 .intro__slide {
@@ -1652,12 +1662,12 @@ body._lock {
   }
 
   .intro__bullets span {
-    margin-bottom: 0;
-    margin-right: 7px;
+    margin-bottom: 0 !important;
+    margin-right: 7px !important;
   }
 
   .intro__bullets span:last-child {
-    margin-right: 0;
+    margin-right: 0 !important;
   }
 
   .offer__body {
@@ -1845,8 +1855,8 @@ body._lock {
   }
 
   .intro__bullets span {
-    margin-bottom: 7px;
-    margin-right: 0;
+    margin-bottom: 7px !important;
+    margin-right: 0 !important;
   }
 
   .intro__body {
